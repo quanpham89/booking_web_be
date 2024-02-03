@@ -1,28 +1,29 @@
 {
   "development": {
-    "username": "quanpham",
-    "password": "APT9BSpF1cKIcaOUTsK2SzaVvYyswlfD",
-    "database": "quanpham",
-    "host": "dpg-cmv4bcqcn0vc73amic9g-a",
-    "dialect": "postgres",
+    "username": "sql6681762",
+    "password": "hCNMjtkwQC",
+    "database": "sql6681762",
+    "host": "sql6.freemysqlhosting.net",
+    "dialect": "mysql",
     "logging": false,
     "query":{
       "raw": true
     },
     "timezone":"+07:00"
   },
+
   "test": {
-    "username": "quanpham",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "sql6681762",
+    "password": "hCNMjtkwQC",
+    "database": "sql6681762",
+    "host": "sql6.freemysqlhosting.net",
     "dialect": "mysql"
   },
   "production": {
-    "username": "quanpham",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "sql6681762",
+    "password": "hCNMjtkwQC",
+    "database": "sql6681762",
+    "host": "sql6.freemysqlhosting.net",
     "dialect": "mysql"
   }
 }
