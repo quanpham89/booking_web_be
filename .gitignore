@@ -1,0 +1,6 @@
+# Quy định file đẩy lên github
+/node_modules
+/vendor
+/.idea
+.idea/
+.env
