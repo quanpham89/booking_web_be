@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
+    "username": "quanpham",
+    "password": "APT9BSpF1cKIcaOUTsK2SzaVvYyswlfD",
     "database": "quanpham",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
+    "host": "dpg-cmv4bcqcn0vc73amic9g-a",
+    "dialect": "postgres",
     "logging": false,
     "query":{
       "raw": true
@@ -12,14 +12,14 @@
     "timezone":"+07:00"
   },
   "test": {
-    "username": "root",
+    "username": "quanpham",
     "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
+    "username": "quanpham",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
