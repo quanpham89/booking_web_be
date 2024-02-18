@@ -93,7 +93,7 @@ let getDetailClinicById = (inputId)=>{
                 if(data){
                     // data.image = new Buffer(data.image, 'base64').toString('binary')
                     let doctorClinic = [];
-                    doctorClinic = await db.Doctor_Info.findAll({
+                    doctorClinic = await db.DoctorInfo.findAll({
                         where: {
                             clinicId: inputId
                         },

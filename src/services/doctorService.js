@@ -83,7 +83,7 @@ let saveInfoDoctor = (inputData)=>{
             }else{
                 // markdown
                 // doctor info
-                let doctorInfo = await db.Doctor_Info.findOne({
+                let doctorInfo = await db.DoctorInfo.findOne({
                     where: {doctorId: inputData.doctorId},
                     raw: false
                 })
@@ -94,7 +94,7 @@ let saveInfoDoctor = (inputData)=>{
                         description: inputData.description,
                         doctorId: inputData.doctorId
                     })
-                    await db.Doctor_Info.create({
+                    await db.DoctorInfo.create({
                         doctorId: inputData.doctorId,
                         priceId :  inputData.selectedPrice,
                         provinceId :  inputData.selectedProvince,
@@ -162,7 +162,7 @@ let getInfoDoctorById = (inputId)=>{
                             attributes: ['description', 'contentHTML','contentMarkdown']
                         },
                         {model: db.Allcode, as:'positionData', attributes:['valueEn','valueVi']},
-                        {model: db.Doctor_Info,
+                        {model: db.DoctorInfo,
                             attributes:{
                                 exclude:['id','doctorId'],
                             },
@@ -332,7 +332,7 @@ let getExtraInfoDoctorById = (inputDoctorId)=>{
                     errMessage:'Missing required parameter'
                 })
             }else{
-                let data = await db.Doctor_Info.findOne({
+                let data = await db.DoctorInfo.findOne({
                     where: {doctorId: inputDoctorId},
                     attributes:{
                         exclude:['id','doctorId'],
@@ -384,7 +384,7 @@ let getProfileDoctorById = (doctorId)=>{
                         {model: db.Markdown, 
                             attributes: ['description', 'contentHTML','contentMarkdown']
                         },
-                        {model: db.Doctor_Info,
+                        {model: db.DoctorInfo,
                             attributes:{
                                 exclude:['id','doctorId'],
                             },

@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "sql6684942",
-    "password": "EFL7g6MsAi",
-    "database": "sql6684942",
-    "host": "sql6.freesqldatabase.com",
+    "username": "quanpham",
+    "password": null,
+    "database": "quanpham",
+    "host": "localhost",
     "dialect": "mysql",
     "logging": false,
     "query":{

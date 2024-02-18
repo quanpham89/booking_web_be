@@ -22,3 +22,17 @@ let connectDB = async()=>{
 }
 
 module.exports = connectDB;
+
+// {
+//   "development": {
+//     "username": "sql6684942",
+//     "password": "EFL7g6MsAi",
+//     "database": "sql6684942",
+//     "host": "sql6.freesqldatabase.com",
+//     "dialect": "mysql",
+//     "logging": false,
+//     "query":{
+//       "raw": true
+//     },
+//     "timezone":"+07:00"
+//   },

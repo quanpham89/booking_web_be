@@ -92,7 +92,7 @@ let getDetailSpecialtyById = (inputId, location)=>{
                     // data.imageBase64 = data.image
                     // data.image = new Buffer(data.image, 'base64').toString('binary')
                     if(location ==='ALL'){
-                        doctorSpecialty = await db.Doctor_Info.findAll({
+                        doctorSpecialty = await db.DoctorInfo.findAll({
                             where: {
                                 SpecialtyId: inputId
                             },
@@ -100,7 +100,7 @@ let getDetailSpecialtyById = (inputId, location)=>{
                         })
                     }
                     else{
-                        doctorSpecialty = await db.Doctor_Info.findAll({
+                        doctorSpecialty = await db.DoctorInfo.findAll({
                             where: {
                                 SpecialtyId: inputId,
                                 provinceId: location 
