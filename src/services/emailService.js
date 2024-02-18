@@ -27,7 +27,7 @@ let getBodyHTMLEmails = (dataSend) =>{
         result = 
         `
         <h3>Dear, ${dataSend.patientName}</h3>
-        <p>You received this email because you booked an online appointment with: ${dataSend.doctorName} on BookingCare website </p>
+        <p>You received this email because you booked an online appointment with: ${dataSend.doctorName} on Booking Web website </p>
         <p>Information about appointment:</p>
         <div>
             <b>Sex: ${dataSend.sex}</b>
@@ -61,7 +61,7 @@ let getBodyHTMLEmails = (dataSend) =>{
         result = 
         `
         <h3>Xin chào, ${dataSend.patientName}</h3>
-        <p>Bạn nhận được email này vì đã đặt lịch khám online trên website BookingCare</p>
+        <p>Bạn nhận được email này vì đã đặt lịch khám online trên website Booking Web</p>
         <p>Thông tin lịch khám:</p>
         <div>
             <b>Giới tính: ${dataSend.sex}</b>

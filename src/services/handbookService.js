@@ -14,7 +14,7 @@ let handleHandbook = (data)=>{
                         descriptionMarkdown: data.descriptionMarkdown,
                         descriptionHTML: data.descriptionHTML,
                         author: data.author,
-                        image: data.imgBase64,
+                        image: data.urlImage,
                     })
                     resolve({
                         errCode: 0,
@@ -35,10 +35,10 @@ let getAllHandbook = ()=>{
         let data = await db.Handbook.findAll()
         try{
             if(data && data.length > 0){
-                data.map(item =>{
-                    item.image = new Buffer(item.image, 'base64').toString('binary')
-                    return item
-                })
+                // data.map(item =>{
+                //     item.image = new Buffer(item.image, 'base64').toString('binary')
+                //     return item
+                // })
                 resolve({
                     errCode: 0,
                     errMessage: 'ok',
@@ -69,9 +69,9 @@ let getDetailHandbookById = (id)=>{
             }else{
                 let data = await db.Handbook.findOne({
                     where: {id: id},
-                    attributes:{
-                        exclude: ["image"]
-                    }
+                    // attributes:{
+                    //     exclude: ["image"]
+                    // }
                 })
                 if(data){
                     resolve({

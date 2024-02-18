@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "sql6681762",
-    "password": "hCNMjtkwQC",
-    "database": "sql6681762",
-    "host": "sql6.freemysqlhosting.net",
+    "username": "sql6684942",
+    "password": "EFL7g6MsAi",
+    "database": "sql6684942",
+    "host": "sql6.freesqldatabase.com",
     "dialect": "mysql",
     "logging": false,
     "query":{

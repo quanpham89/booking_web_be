@@ -14,7 +14,7 @@ let handleClinic = (data)=>{
                     await db.Clinic.create({
                         name: data.name,
                         address: data.address,
-                        image: data.imgBase64,
+                        image: data.urlImage,
                         descriptionHTML: data.descriptionHTML,
                         descriptionMarkdown: data.descriptionMarkdown
                     })
@@ -31,7 +31,7 @@ let handleClinic = (data)=>{
                     if (dataUpdate){
                         dataUpdate.name =  data.name,
                         dataUpdate.address =  data.address,
-                        dataUpdate.image =  data.imgBase64,
+                        dataUpdate.image =  data.urlImage,
                         dataUpdate.descriptionHTML =  data.descriptionHTML,
                         dataUpdate.descriptionMarkdown =  data.descriptionMarkdown
                         await dataUpdate.save()
@@ -57,12 +57,12 @@ let getAllClinic = ()=>{
                     exclude: ['createdAt','updatedAt']
                 },
             })
-            if(data && data.length >0){
-                data.map(item =>{
-                    item.image = new Buffer(item.image, 'base64').toString('binary')
-                    return item
-                })
-            }
+            // if(data && data.length >0){
+            //     data.map(item =>{
+            //         item.image = new Buffer(item.image, 'base64').toString('binary')
+            //         return item
+            //     })
+            // }
             resolve({
                 errCode: 0,
                 errMessage:'ok',
@@ -91,7 +91,7 @@ let getDetailClinicById = (inputId)=>{
                     attributes:['name','address','descriptionHTML','descriptionMarkdown','image']
                 })
                 if(data){
-                    data.image = new Buffer(data.image, 'base64').toString('binary')
+                    // data.image = new Buffer(data.image, 'base64').toString('binary')
                     let doctorClinic = [];
                     doctorClinic = await db.Doctor_Info.findAll({
                         where: {

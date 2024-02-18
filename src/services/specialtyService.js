@@ -11,7 +11,7 @@ let handleSpecialty = (data)=>{
                 if(data.action ==="CREATE"){
                     await db.Specialty.create({
                         name: data.name,
-                        image: data.imgBase64,
+                        image: data.urlImage,
                         descriptionHTML: data.descriptionHTML,
                         descriptionMarkdown: data.descriptionMarkdown
                     })
@@ -28,7 +28,7 @@ let handleSpecialty = (data)=>{
                         if(updateSpecialty){
                             updateSpecialty.name =  data.name,
                             updateSpecialty.address =  data.address,
-                            updateSpecialty.image =  data.imgBase64,
+                            updateSpecialty.image =  data.urlImage,
                             updateSpecialty.descriptionHTML =  data.descriptionHTML,
                             updateSpecialty.descriptionMarkdown =  data.descriptionMarkdown
                         }
@@ -54,12 +54,12 @@ let getAllSpecialty = ()=>{
                     exclude: ['createdAt','updatedAt']
                 },
             })
-            if(data && data.length >0){
-                data.map(item =>{
-                    item.image = new Buffer(item.image, 'base64').toString('binary')
-                    return item
-                })
-            }
+            // if(data && data.length >0){
+            //     data.map(item =>{
+            //         item.image = new Buffer(item.image, 'base64').toString('binary')
+            //         return item
+            //     })
+            // }
             resolve({
                 errCode: 0,
                 errMessage:'ok',
@@ -89,8 +89,8 @@ let getDetailSpecialtyById = (inputId, location)=>{
                 })
                 if(data){
                     let doctorSpecialty = [];
-                    data.imageBase64 = data.image
-                    data.image = new Buffer(data.image, 'base64').toString('binary')
+                    // data.imageBase64 = data.image
+                    // data.image = new Buffer(data.image, 'base64').toString('binary')
                     if(location ==='ALL'){
                         doctorSpecialty = await db.Doctor_Info.findAll({
                             where: {

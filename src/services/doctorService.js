@@ -178,11 +178,11 @@ let getInfoDoctorById = (inputId)=>{
                     nest: true
                     }
                 ) 
-                if( data && data.image ){
-                    data.image = new Buffer(data.image,'base64').toString('binary')
-                }else{
-                    data = {}
-                }
+                // if( data && data.image ){
+                //     data.image = new Buffer(data.image,'base64').toString('binary')
+                // }else{
+                //     data = {}
+                // }
                 if(!data.Markdown.contentHTML || !data.Markdown.contentMarkdown || !data.Markdown.description){
                     data.Markdown.contentHTML = 1,
                     data.Markdown.contentMarkdown = 1,
@@ -400,11 +400,11 @@ let getProfileDoctorById = (doctorId)=>{
                     nest: true
                     }
                 ) 
-                if( data && data.image ){
-                    data.image = new Buffer(data.image,'base64').toString('binary')
-                }else{
-                    data = {}
-                }
+                // if( data && data.image ){
+                //     data.image = new Buffer(data.image,'base64').toString('binary')
+                // }else{
+                //     data = {}
+                // }
                 resolve({
                     errCode: 0,
                     data
