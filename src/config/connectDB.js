@@ -6,7 +6,7 @@ const { Sequelize } = require('sequelize');
 //     dialect: 'mysql',
 //     logging: true
 // });
-const sequelize = new Sequelize('sql6684942', 'sql6684942', "EFL7g6MsAi", {
+const sequelize = new Sequelize('sql6687050', 'sql6687050', "AEyQlS7mkl", {
   host: 'sql6.freesqldatabase.com',
   dialect: 'mysql',
   logging: true
@@ -23,16 +23,15 @@ let connectDB = async()=>{
 
 module.exports = connectDB;
 
-// {
-//   "development": {
-//     "username": "sql6684942",
-//     "password": "EFL7g6MsAi",
-//     "database": "sql6684942",
-//     "host": "sql6.freesqldatabase.com",
-//     "dialect": "mysql",
-//     "logging": false,
-//     "query":{
-//       "raw": true
-//     },
-//     "timezone":"+07:00"
+// "development": {
+//   "username": "sql6684942",
+//   "password": "EFL7g6MsAi",
+//   "database": "sql6684942",
+//   "host": "sql6.freesqldatabase.com",
+//   "dialect": "mysql",
+//   "logging": false,
+//   "query":{
+//     "raw": true
 //   },
+//   "timezone":"+07:00"
+// },
