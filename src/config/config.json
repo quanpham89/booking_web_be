@@ -14,17 +14,17 @@
   },
 
   "test": {
-    "username": "sql6703212",
-    "password": "5guImXxNYQ",
-    "database": "sql6703212",
-    "host": "sql6.freesqldatabase.com",
+    "username": "sql6681762",
+    "password": "hCNMjtkwQC",
+    "database": "sql6681762",
+    "host": "sql6.freemysqlhosting.net",
     "dialect": "mysql"
   },
   "production": {
-    "username": "sql6703212",
-    "password": "5guImXxNYQ",
-    "database": "sql6703212",
-    "host": "sql6.freesqldatabase.com",
+    "username": "sql6681762",
+    "password": "hCNMjtkwQC",
+    "database": "sql6681762",
+    "host": "sql6.freemysqlhosting.net",
     "dialect": "mysql"
   }
 }
