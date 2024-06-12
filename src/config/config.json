@@ -1,10 +1,10 @@
 {
   
   "development": {
-    "username": "sql6703212",
-    "password": "5guImXxNYQ",
-    "database": "sql6703212",
-    "host": "sql6.freesqldatabase.com",
+    "username": "sql12713448",
+    "password": "6adfHPdDxl",
+    "database": "sql12713448",
+    "host": "sql12.freesqldatabase.com",
     "dialect": "mysql",
     "logging": false,
     "query":{
