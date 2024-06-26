@@ -6,7 +6,7 @@ const { Sequelize } = require('sequelize');
 //     dialect: 'mysql',
 //     logging: true
 // });
-const sequelize = new Sequelize('sql12714557', 'sql12714557', "rKkaKkeSt2", {
+const sequelize = new Sequelize('sql12716182', 'sql12716182', "4akradCrGS", {
   host: 'sql12.freesqldatabase.com',
   dialect: 'mysql',
   logging: true
