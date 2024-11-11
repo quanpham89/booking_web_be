@@ -1,12 +1,12 @@
 const { Sequelize } = require('sequelize');
-
+// https://dash.filess.io/#/app/profile
 // Option 3: Passing parameters separately (other dialects)
 // const sequelize = new Sequelize('quanpham', 'quanpham',null,  {
 //     host: 'localhost',
 //     dialect: 'mysql',
 //     logging: true
 // });
-const sequelize = new Sequelize('sql12716182', 'sql12716182', "4akradCrGS", {
+const sequelize = new Sequelize('sql12744019', 'sql12744019', "HM7P4nwL8u", {
   host: 'sql12.freesqldatabase.com',
   dialect: 'mysql',
   logging: true
@@ -20,7 +20,7 @@ let connectDB = async()=>{
         console.error('Unable to connect to the database:', error);
       }
 }
-
+  
 module.exports = connectDB;
 
 // "development": {
